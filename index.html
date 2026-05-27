@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
   <title>LOOVIiPhnes — Especialistas Apple</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -1255,8 +1256,9 @@
       }
 
       .galeria-item.destaque {
-        grid-column: span 2;
-        height: 260px;
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 160px;
       }
 
       .galeria-item {
@@ -1303,12 +1305,13 @@
       }
 
       .galeria-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
       }
 
       .galeria-item.destaque {
         grid-column: span 1;
-        height: 260px;
+        grid-row: span 1;
+        height: 160px;
       }
     }
   </style>
@@ -1564,7 +1567,7 @@
           </div>
           <div>
             <strong>Telefone / WhatsApp</strong>
-            <p>(41) 99536-6519</p>
+            <p><a href="tel:+5541995366519" style="color:inherit;text-decoration:none;">(41) 99536-6519</a></p>
           </div>
         </div>
         <div class="contact-item">
