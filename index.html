@@ -1618,6 +1618,16 @@
   </a>
 
   <script>
+    // Sound toggle do vídeo hero
+    function toggleSound() {
+      const video = document.getElementById('heroVideo');
+      const iconMuted = document.getElementById('iconMuted');
+      const iconSound = document.getElementById('iconSound');
+      video.muted = !video.muted;
+      iconMuted.style.display = video.muted ? 'block' : 'none';
+      iconSound.style.display = video.muted ? 'none' : 'block';
+    }
+
     // Custom cursor (somente em dispositivos com mouse)
     const cursor = document.getElementById('cursor');
     const ring = document.getElementById('cursorRing');
